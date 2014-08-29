@@ -1,0 +1,33 @@
+$font-color: white;
+
+$header-font: 'Gill Sans MT Pro Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font: 'Gill Sans MT Pro Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+[class^=col],[class^=section] {
+    float: left;
+}
+
+.left {
+    float: left;   
+}
+.right {
+    float: right;
+}
+.center {
+	text-align: center;
+}
+
+.italic {
+	font-style: italic;
+}
