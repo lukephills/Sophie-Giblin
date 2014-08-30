@@ -1,7 +1,11 @@
 $font-color: white;
+$a-color: white;
+$secondary-color: black;
+$third-color: rgb(113,152,168);
 
-$header-font: 'Gill Sans MT Pro Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$body-font: 'Gill Sans MT Pro Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$header-font: 'GillSans Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font: 'GillSans Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$italic-font: 'ITCCentury LT Book', "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 
@@ -11,6 +15,7 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+  opacity: 1;
 }
 
 
@@ -30,4 +35,16 @@ html {
 
 .italic {
 	font-style: italic;
+}
+
+.hide-for-small {
+	display: none;
+	@media only screen and (min-width: 747px) {
+		display: block;
+	}
+}
+
+.hidden {
+	// opacity: 0;
+	transition: all 0.3s ease-in;
 }
