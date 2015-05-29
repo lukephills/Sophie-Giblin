@@ -202,19 +202,19 @@ module.exports = function (grunt) {
         },
 
         // Renames files for browser caching purposes
-        rev: {
-            dist: {
-                files: {
-                    src: [
-                        '<%= config.dist %>/scripts/{,*/}*.js',
-                        '<%= config.dist %>/styles/{,*/}*.css',
-                        '<%= config.dist %>/images/{,*/}*.*',
-                        // '<%= config.dist %>/styles/fonts/{,*/}*.*',
-                        '<%= config.dist %>/*.{ico,png}'
-                    ]
-                }
-            }
-        },
+        // rev: {
+        //     dist: {
+        //         files: {
+        //             src: [
+        //                 '<%= config.dist %>/scripts/{,*/}*.js',
+        //                 '<%= config.dist %>/styles/{,*/}*.css',
+        //                 '<%= config.dist %>/images/{,*/}*.*',
+        //                 // '<%= config.dist %>/styles/fonts/{,*/}*.*',
+        //                 '<%= config.dist %>/*.{ico,png}'
+        //             ]
+        //         }
+        //     }
+        // },
 
         // Reads HTML for usemin blocks to enable smart builds that automatically
         // concat, minify and revision files. Creates configurations in memory so
@@ -318,7 +318,8 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*'
+                        'styles/fonts/{,*/}*.*',
+                        'videos/{,*/}*.*'
                     ]
                 }]
             },
@@ -411,7 +412,7 @@ module.exports = function (grunt) {
         'uglify',
         'copy:dist',
         'modernizr',
-        'rev',
+        // 'rev',
         'usemin',
         'htmlmin'
     ]);
